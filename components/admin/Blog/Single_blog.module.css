@@ -1,0 +1,105 @@
+.Single_blogConatiner{
+    width: 100%;
+    max-width: 1280px;
+    margin: 50px auto ;
+    padding: 0px 15px;
+}
+.Single_Content h1{
+    font-size: 32px;
+    color: #111;
+    line-height: 44px;
+    font-weight: 600;
+}
+.Single_firstcontent{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+.Single_firstcontent h1, .Single_firstcontent p{
+    flex: 1;
+}
+.Single_blogConatiner .Inner_blogContent{
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 30px 0px;
+}
+.Single_blogConatiner .Inner_blogContent img{
+    border-radius: 20px;
+    /* width: 100%; */
+    margin: 10px 0px 30px;
+}
+.Single_blogConatiner .Inner_blogContent h2{
+    font-size: 22px;
+    margin: 10px 0px;
+}
+.Single_blogConatiner p{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0px 0px 10px;
+}
+.collection_banner {
+    background: url(/_next/static/media/collection_banner.5e803070.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-position: center;
+    width: 100%;
+    margin: 10px auto 0px;
+    border-radius: 30px !important;
+    display: flex;
+    align-items: center;
+    min-height: 360px;
+    max-width: 98%;
+    padding: 0px 0px 0px 70px;
+  }
+  .collection_banner h1 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .collection_banner p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Dm sans' !important;
+  }
+  .Single_Content button{
+    background-color: #a2d061;
+    border: 1px solid #a2d061;
+    font-size: 18px;
+    min-height: 49px;
+    padding: 0px 20px;
+   border-radius: 30px;
+   color: #fff;
+   width: 100%;
+   max-width: fit-content;
+   margin: 0px auto;
+   display: flex;
+   align-items: center;
+   transition: .5s all;
+   
+  }
+  .Single_Content button:hover {
+    background-color: transparent;
+    border: 1px solid #a2d061;
+    color:#a2d061 ;
+  }
+@media (max-width:767px){
+    .Single_firstcontent {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .Single_Content h1{
+        font-size: 28px;
+        color: #111;
+        line-height: 36px;
+        font-weight: 600;
+    }
+    .collection_banner h1{
+        font-size:28px;
+        line-height: 34px;
+    }
+}

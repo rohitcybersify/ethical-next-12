@@ -1,0 +1,201 @@
+.pdf_desgin{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.main_pdfLogo{
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto 0px;
+    text-align: center;
+}
+.after_logo{
+    width: 100%;
+    max-width: 670px;
+    margin: 50px auto 0px;
+}
+.after_logo p{
+    text-align: center;
+    font-size: 16px;
+}
+.after_logo ul li{
+    text-align: left;
+    list-style: disc;
+    line-height: 30px;
+}
+.content_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+.content_wrap p{
+    font-weight: 600;
+}
+.heading_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.heading_wrapper h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+.heading_wrapper button{
+font-size:22px;
+}
+.amountContainer{
+    border: 1px solid #bebebe;
+    padding: 5px;
+    max-width: fit-content;
+    border-radius: 5px;
+}
+.single_pdfpro{
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+.about_swagsec {
+    margin: 50px 0px;
+}
+.about_swagsec h3{
+    font-weight: 400;
+    font-size: 28px;
+}
+.about_swagsec div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.about_swagsec div h4{
+    font-size: 18px;
+    line-height: 18px;
+    margin: 20px 0px;
+
+}
+.about_swagsec div label{
+    font-size: 16px;
+    color: #949090;
+    
+}
+.about_swagsec input{
+    background-color: #F7F7F7;
+    border-radius: 30px;
+    border: 1px solid #CACACA;
+    min-height: 60px;
+    padding: 0px 25px;
+}
+.Intersted{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: unset !important;
+    margin-top: 0px !important;
+}
+.Intersted div{
+    max-width: 170px;
+}
+
+/* checkbox */
+.custom_checkbox {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    display: flex;
+    align-content: center;
+  }
+  .custom_checkbox input[type='checkbox'] {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+  }
+  .custom_checkbox label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #949090;
+    font-size: 14px;
+    color: #949090;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .custom_checkbox label:before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 02px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+  }
+  .custom_checkbox input[type='checkbox']:checked + label:before {
+    background-color: #A2D061;
+    border-color: #A2D061;
+  }
+  .custom_checkbox label:after {
+    content: ' ';
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    line-height: 18px;
+    left: 6px;
+    top: 5px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 0 2px 2px 0;
+    transform: rotate(35deg);
+  }
+  .custom_checkbox input[type='checkbox']:checked + label:after {
+    visibility: visible;
+  }
+  @media (max-width:767px){
+    .about_swagsec h3{
+        font-weight: 400;
+        font-size: 22px;
+    }
+    .single_pdfpro{
+        flex-wrap: wrap;
+    }
+    .heading_wrapper h2{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .heading_wrapper button{
+        font-size:18px;
+        }
+        .about_swagsec div h4{
+            font-size: 16px;
+            line-height: 28px;
+        
+        }
+        .about_swagsec input{
+            min-height: 50px;
+            padding: 0px 15px;
+        }
+        .after_logo ul {
+            margin-left: 20px;
+        }
+  }
+  @media (max-width:479px){
+    .Intersted{
+flex-direction: column !important;
+
+    }
+  }

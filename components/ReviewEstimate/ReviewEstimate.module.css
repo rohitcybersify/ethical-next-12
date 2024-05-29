@@ -1,0 +1,141 @@
+.reviewEstimate_container {
+  margin-top: 3rem;
+}
+
+.reviewEstimate_container > p {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.reviewEstimate_container .project_details_text {
+  font-size: 1.175rem;
+}
+
+.reviewEstimate_container .expand_all_content {
+  width: 100%;
+  text-align: right;
+}
+
+.reviewEstimate_container .expand_all_content p {
+  font-size: 0.75rem;
+}
+.form_labelwrap{
+  font-size: 18px;
+}
+.reviewEstimate_container .reviewContainer {
+  border: 1px solid #f1f8e7;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 1rem;
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reviewEstimate_container .reviewContainer .reviewContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.reviewEstimate_container .left_content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  max-width: 590px;
+}
+/* .step_from{
+  padding: 1rem;
+} */
+.reviewEstimate_container .left_content .imgContent {
+  width: 100%;
+  max-width: 92px;
+  flex: 2;
+  height: 105px;
+  display: flex;
+  border-radius: 18px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  background-color: #f5f9ee;
+}
+
+.cross_icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.reviewEstimate_container .left_content .textContent {
+  flex: 4;
+}
+
+.reviewEstimate_container .left_content .right_content {
+  flex: 1;
+}
+
+.reviewEstimate_container .left_content .textContent .title {
+  font-size: 0.81rem;
+  margin-bottom: 0.3rem;
+}
+
+.reviewEstimate_container .left_content .textContent .color,
+.reviewEstimate_container .left_content .textContent .quantity {
+  color: #707070;
+  font-size: 0.68rem;
+  margin-bottom: 0.3rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  color: #a2d061;
+  transition: 0.5s all ease-in-out;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #a2d061;
+  border-radius: 30px;
+}
+.buttons button:hover {
+  background-color: #a2d061;
+  color: #fff;
+}
+
+.buttons button:first-child {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  padding-inline: 1.5rem;
+  align-items: center;
+}
+.right_content span {
+  white-space: pre;
+}
+@media (max-width:991px){
+  .reviewEstimate_container .reviewContainer {
+    padding: 1rem;
+}
+.reviewEstimate_container {
+  margin-top: 1rem;
+}
+}
+@media (max-width: 767px) {
+  .reviewEstimate_container .left_content {
+    flex-wrap: wrap;
+  }
+  .reviewEstimate_container .left_content .textContent {
+    flex: 100%;
+  }
+  .right_content span {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,241 @@
+.Store_section {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+  padding-block: 1rem;
+}
+
+.Store_section_container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.Store_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.Store_left_content {
+  flex: 2;
+}
+
+.Store_right_content {
+  flex: 7;
+}
+
+.planning_section {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 30px;
+}
+
+.planning_section_content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.planning_section_content .detail_content {
+  min-width: 368px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.bottom_buttons {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.bottom_buttons button {
+  width: 12%;
+  border: 1px solid #a2d061;
+  height: 50px;
+  margin-right: 1rem;
+  border-radius: 30px;
+  color: #a2d061;
+}
+
+.bottom_buttons button:first-child {
+  background-color: #a2d061;
+  color: #fff;
+}
+
+.detail_content input[type='radio'] {
+  cursor: pointer;
+}
+
+/*  */
+.Store_section {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+  padding-block: 1rem;
+}
+
+.Store_section_container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.Store_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.Store_left_content {
+  flex: 2;
+}
+
+.Store_right_content {
+  flex: 7;
+}
+
+.middle_section {
+  background-color: #fff;
+  width: 100%;
+  padding: 3rem;
+  margin-top: 1.5rem;
+  border-radius: 30px;
+}
+
+.middle_section_container {
+  width: 100%;
+}
+
+.text_content {
+  width: 100%;
+}
+
+.text_content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.text_content input {
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  padding-left: 1.5rem;
+}
+
+.text_content input:focus {
+  outline: none;
+}
+
+.middle_content {
+  margin-top: 2rem;
+}
+
+.middle_content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.middle_content .file_Container {
+  width: 100%;
+}
+
+.middle_content .file_Container label {
+  width: 100%;
+  height: 155px;
+  display: inline-block;
+  border: 2px dashed #a2d061;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #f6faef;
+}
+
+.middle_content .file_Container label input {
+  display: none;
+}
+
+.line_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.add_icon {
+  position: relative;
+  width: 20%;
+}
+.add_buton {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.show_file {
+  width: 100%;
+}
+
+.selectedFile {
+  padding-left: 1rem;
+}
+
+.preview_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.desc_container {
+  margin-top: 2rem;
+}
+
+.desc_container p {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.desc_container .desc {
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+}
+
+.desc_container .desc span {
+  font-size: 0.8rem;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.bottom_buttons {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.bottom_buttons button {
+  width: 10%;
+  border: 1px solid #a2d061;
+  height: 47px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.bottom_buttons button:first-child {
+  margin-right: 15px;
+  background-color: #a2d061;
+}
+
+.bottom_buttons button:last-child {
+  color: #a2d061;
+}

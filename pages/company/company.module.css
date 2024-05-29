@@ -1,0 +1,21 @@
+.company_section_container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.company_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.company_left_content {
+  flex: 2;
+}
+
+.company_right_content {
+  flex: 6;
+}

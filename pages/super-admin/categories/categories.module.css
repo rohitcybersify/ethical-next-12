@@ -1,0 +1,89 @@
+.Categories_section {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.Categories_container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.Categories_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.Categories_left_content {
+  flex: 2;
+}
+
+.Categories_right_content {
+  flex: 6;
+}
+
+.Categories_data_table {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-block: 1rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.Categories_data_table table {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.Categories_data_table table tr:first-child {
+  background-color: #f0f0f0;
+}
+
+.Categories_data_table table th:nth-child(3) {
+  text-align: center;
+}
+.Categories_data_table table th,
+.Categories_data_table table td {
+  text-align: left;
+  padding: 15px;
+}
+
+.Categories_data_table table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.Categories_data_table .action_icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.pagination_container {
+  width: 100%;
+}
+
+.pagination_container .pagination_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Categories_data_table td input[type='checkbox'] {
+  cursor: pointer;
+}
+
+.name_cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}

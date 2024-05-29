@@ -1,0 +1,300 @@
+.login_wrapper {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_container {
+  min-width: 600px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding-block: 50px;
+}
+
+.login_content {
+  width: 100%;
+}
+
+.login_img_content {
+  width: 100%;
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+  padding-inline: 50px;
+}
+.form .input_box {
+  width: 100%;
+  margin-top: 0;
+  padding: 8px 0;
+  position: relative;
+}
+.input_box input {
+  height: 60px;
+  width: 100%;
+  background-color: #f7f7f7;
+  outline: none;
+  border: 1px solid #cacaca;
+  border-radius: 30px;
+  padding-left: 1.5rem;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  background-color: #f7f7f7d7;
+}
+.login_eye {
+  position: absolute;
+  right: 20px;
+  /* transform: translateY(-50%); */
+  top: 30px;
+}
+.input_radio_content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.input_box button {
+  margin-top: 0.7rem;
+  padding: 1rem 0;
+  border-radius: 130px;
+  background: var(--green, #a2d061);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  width: 30%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  width: 100%;
+}
+
+.input_box button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  padding-left: 10px;
+  max-width: 499px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.input_box:last-child {
+  text-align: center;
+}
+
+.input_box:last-child p span {
+  color: #a2d061;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.input_box .forgot_password {
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  color: #949090;
+}
+
+.input_box span {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #a2d061;
+}
+
+.input_box .reset_password {
+  width: 100%;
+}
+
+/* custom checkbox */
+
+.custom_checkbox {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  display: flex;
+  align-content: center;
+}
+
+.custom_checkbox input[type='checkbox'] {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.custom_checkbox label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #949090;
+  font-size: 14px;
+  color: #949090;
+  font-weight: 400;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.custom_checkbox label:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cacaca;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+}
+
+.custom_checkbox input[type='checkbox']:checked + label:before {
+  background-color: #a2d061;
+  border-color: #a2d061;
+}
+.custom_checkbox label:after {
+  content: ' ';
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  line-height: 18px;
+  left: 6px;
+  top: 4px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-top-width: medium;
+  border-right-width: medium;
+  border-bottom-width: medium;
+  border-left-width: medium;
+  border-width: 0 2px 2px 0;
+  transform: rotate(35deg);
+}
+
+.custom_checkbox input[type='checkbox']:checked + label:after {
+  visibility: visible;
+}
+
+.registered_text {
+  color: #949090;
+}
+.registered_text span {
+  font-weight: 500;
+  margin-left: 2px;
+}
+.otp_field .boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.otp_field .boxes input {
+  width: 100%;
+  max-width: 60px;
+  border-radius: 7px;
+  padding: 10px;
+  /* background: transparent; */
+  /* border: 0px; */
+  /* border-bottom: 2px solid #a2d061; */
+  font-size: 26px;
+  text-align: center;
+}
+/* responisve */
+@media (max-width: 1440px) {
+  .input_box input {
+    height: 49px;
+    font-size: 14px;
+  }
+  .registered_text {
+    font-size: 14px;
+  }
+  .login_container {
+    min-width: 460px;
+    padding-block: 20px;
+  }
+  .input_radio_content {
+    margin-top: 2px;
+  }
+  .form {
+    margin-top: 10px;
+    padding-inline: 30px;
+  }
+  .input_box button {
+    margin-top: 10px;
+    padding: 6px 0;
+    height: 49px;
+    font-size: 16px;
+  }
+  .error {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .login_container {
+    min-width: 60%;
+    padding-block: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .form .input_box {
+    padding: 6px 0;
+  }
+  .input_box input {
+    height: 55px;
+    padding-left: 1.3rem;
+    font-size: 16px;
+  }
+  .input_box button {
+    padding: 0.8rem 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .login_container {
+    min-width: 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .login_container {
+    min-width: 70%;
+  }
+  .form {
+    padding-inline: 15px;
+    margin-top: 15px;
+  }
+  .input_box button {
+    margin-top: 1.7rem;
+  }
+  .registered_text {
+    font-size: 14px;
+  }
+
+  .input_box input {
+    height: 50px;
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  .input_box button {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .login_container {
+    min-width: 90%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .login_container {
+    min-width: 85%;
+    max-width: 94%;
+  }
+}

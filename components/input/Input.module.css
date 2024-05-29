@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.content .details {
+  width: 100%;
+  min-width: 546px;
+  border: 1px solid #d8d8d8;
+  height: 280px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 30px;
+}
+
+.content .details .inner_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.content .inner_content .img {
+  position: absolute;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.content .inner_content p {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 400;
+      display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.content input[type='file'] {
+  display: none;
+}
+
+.details label {
+  border: 1.5px solid #eeeeee;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.details label span {
+  display: inline-block;
+  background-color: #e7ebee;
+  padding: 0.3rem 0.58rem;
+  border: 1px solid #a7a6ab;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.content button {
+  border: 1px solid #a2d061;
+  height: 53px;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  width: 193px;
+  border-radius: 130px;
+  color: #a2d061;
+  font-size: 20px;
+  font-weight: 400;
+  transition: .5s all ease-in-out;
+}
+.content button:hover{
+  background-color:#a2d061;
+  color: #fff;
+  transition: .5s all ease-in-out;
+}
+
+.bottom_content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bottom_content > p {
+  font-size: 15px;
+  color: #3d3d3d;
+}
+.bottom_content input{
+  accent-color: #484D74
+}
+.cross_icon {
+  position: absolute;
+  transform: rotate(45deg);
+  display: inline-block;
+  font-size: 30px;
+  top: 14px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.img_name {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width:1366px){
+  .content .details {
+    min-width: 400px;
+}
+}
+@media (max-width:991px){
+  .content .details {
+    min-width: 100%;
+}
+.content {
+  width: 100%;
+}
+}

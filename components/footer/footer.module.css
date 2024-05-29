@@ -1,0 +1,212 @@
+.footer_section {
+  background: #050505;
+  padding: 70px 0;
+  padding-bottom: 20px;
+}
+.footer_container {
+  width: 100%;
+  margin: auto;
+  max-width: 1600px;
+  padding: 0px 15px;
+}
+.footer_container a {
+  text-transform: lowercase;
+}
+.main_footer_container {
+  display: flex;
+  align-items: flex-start;
+  background: #050505;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.14px;
+  text-transform: capitalize;
+  gap: 30px;
+}
+
+.inputContainer .error {
+  color: red;
+  line-height: 16px;
+  margin-top: 10px;
+  /* position: absolute; */
+  font-size: 12px;
+}
+.main_footer_container > div:first-child {
+  flex: 33%;
+  width: 100%;
+  max-width: 30%;
+}
+.container_column_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.heading_footer {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.38%;
+  letter-spacing: 0.16px;
+  text-transform: math-auto;
+}
+
+.heading_footer_2 {
+  color: #fff;
+  font-family: 'Poppins' !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.38%; /* 24.008px */
+  letter-spacing: 0.18px;
+  margin-bottom: 8px;
+}
+
+.container_column_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.container_column_3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding-top: 15px;
+  position: relative;
+  flex-wrap: wrap;
+}
+.inputContainer div {
+  width: 100%;
+  max-width: 200px;
+}
+.inputContainer input {
+  background: transparent;
+  border: 1px solid #fff;
+  height: 36px;
+  border-radius: 30px;
+  padding-left: 1rem;
+  font-size: 12px;
+  width: 100%;
+  /* max-width: 160px; */
+}
+.inputContainer input::placeholder {
+  color: #8a8a8a;
+}
+.inputContainer button {
+  width: 80px;
+  height: 36px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: all 0.3s ease-in;
+}
+.inputContainer button:hover {
+  background-color: rgba(163, 209, 114, 1);
+  color: #fff;
+}
+.container_column_4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.social_links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 30px 0px 20px;
+}
+.social_links div {
+  cursor: pointer;
+}
+.social_links svg {
+  transition: all 0.3s ease-in;
+  font-size: 20px !important;
+}
+.social_links svg:hover {
+  fill: rgba(163, 209, 114, 1) !important;
+  transform: scale(1.1);
+}
+
+.horizontal_line_container {
+  margin: 10px 0x;
+}
+
+.horizontal_line {
+  color: red;
+  background-color: red;
+}
+
+.banks_main_container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0px;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 228.571% */
+  letter-spacing: 0.14px;
+  text-transform: capitalize;
+}
+
+.banks_main_container_right {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.footer_li {
+  transition: all 0.3s ease-in;
+}
+.footer_li:hover {
+  margin-left: 10px;
+  color: rgba(163, 209, 114, 1);
+  font-weight: 500;
+}
+.footer_email_link:hover {
+  margin-left: 10px;
+  color: rgba(163, 209, 114, 1);
+  font-weight: 500;
+}
+/* responsive */
+@media (max-width: 768px) {
+  .footer_container .main_footer_container {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .footer_container .banks_main_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main_footer_container > div:first-child {
+    flex: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 479) {
+  .footer_container .banks_main_container .banks_main_container_right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer_container .banks_main_container .banks_main_container_right img {
+    margin-left: -5px;
+  }
+}

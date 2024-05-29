@@ -1,0 +1,128 @@
+.middle_section {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.middle_section p {
+  padding: 10px;
+  margin-block: 1rem;
+}
+
+.middle_section .buttons {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.middle_section .buttons button {
+  border-radius: 30px;
+  padding: 15px 35px;
+  background-color: #ecf6df;
+  border: 1px solid #a2d061;
+  color: #a2d061;
+}
+
+.middle_section .buttons button:last-child {
+  margin-left: 1rem;
+  padding: 15px 58px;
+  background-color: #a2d061;
+  color: #fff;
+}
+
+.middle_section input[type='text'] {
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  padding-left: 2rem;
+  background-color: #f0f0f0;
+}
+
+.middle_section input:focus {
+  outline: none;
+}
+
+.AddRoles_data_table {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-block: 1rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.AddRoles_data_table input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
+
+.assign_permissions {
+  width: 100%;
+  display: flex;
+  flex-direction: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.assign_permissions_inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+.AddRoles_data_table table {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.AddRoles_data_table table tr:first-child {
+  background-color: #f0f0f0;
+}
+
+.AddRoles_data_table table th:last-child {
+  text-align: center;
+}
+.AddRoles_data_table table th,
+.AddRoles_data_table table td {
+  text-align: left;
+  padding: 15px;
+}
+
+.AddRoles_data_table table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.AddRoles_data_table .action_icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.AddRoles_data_table td input[type='checkbox'] {
+  cursor: pointer;
+}
+
+.name_cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.middle_section table {
+  width: 100%;
+}
+
+.btn {
+  background-color: #a2d061;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  margin-right: 15px;
+  border-radius: 30px;
+  font-size: 1rem;
+}

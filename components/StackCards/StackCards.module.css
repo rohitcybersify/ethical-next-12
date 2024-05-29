@@ -1,0 +1,111 @@
+.explor_imgSec{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.stack_card{
+  position: relative;
+  /* background-color: #30344c; */
+  padding: 1em;
+  z-index: 5;
+  box-shadow: 0 4px 25px rgb(0 0 0 / 11%);
+  /* transition: 200ms ease-in-out; */
+  transition: all .5s ease-in-out;
+  border-radius: 30px;
+  max-width: 310px;
+  cursor: pointer;
+}
+.explor_imgSec>li.stack_card:nth-child(1){
+  background-color: #00C1D5;
+  width: 100%;
+  transform: scale(.7);
+  margin-left: -11rem;
+}
+.stack_card:hover{
+  z-index: 7;
+  transform: scale(1) !important;
+  box-shadow: 0 4px 25px rgb(0 0 0 / 11%);
+}
+.explor_imgSec>li.stack_card:hover:nth-child(5){
+  transform: scale(1.1) !important;
+}
+/* .explor_imgSec>li.stack_card:hover:nth-child(1),
+.explor_imgSec>li.stack_card:hover:nth-child(2){
+  transform: scale(1) translateX(50%) !important;
+} */
+.explor_imgSec>li.stack_card:nth-child(2){
+  margin-top: 0;
+  margin-left: -15rem;
+  background-color: #A2D061;
+  transform: scale(.8);
+}
+.explor_imgSec>li.stack_card:nth-child(3){
+  margin-top: 0;
+  margin-left: -15rem;
+  background: #8D4399;
+  transform: scale(.9);
+}
+.explor_imgSec>li.stack_card:nth-child(4){
+  margin-top: 0;
+  margin-left: -16rem;
+  background: #FCC745;
+  transform: scale(.9);
+}
+.explor_imgSec>li.stack_card:nth-child(5){
+  margin-top: 0;
+  margin-left: -15rem;
+  background: #F65275;
+  transform: scale(1);
+}
+.list_explore{
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.flat_dis {
+  color: #fff;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 7px 20px;
+  font-size: 11px;
+}
+.bottom_content button {
+  background: #fff;
+  border-radius: 30px;
+  padding: 4px 20px;
+  font-size: 14px;
+  font-family: poppins;
+  transition: 0.5s all;
+  border: 1px solid #fff;
+}
+.bottom_content button:hover {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+.bottom_content h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+}
+.bottom_content p {
+  font-size: 13px;
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  padding: 7px 0px 20px;
+}
+.cardImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.stack_card img{
+  object-fit: contain;
+}

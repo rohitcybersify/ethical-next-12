@@ -1,0 +1,122 @@
+.middle_section .Approval_detail_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle_section .Approval_detail_content span {
+  font-size: 0.9rem;
+  color: #828282;
+}
+
+.overview_products {
+  margin-top: 2rem;
+}
+
+.overview_products > p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.overview_products .content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview_products .content .imgContent {
+  width: 120px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #f6faef;
+}
+
+.overview_products .content .btnContent button {
+  background-color: #fff;
+  padding: 0.3rem 0.8rem;
+  margin-right: 10px;
+  border: 1px solid #a2d061;
+  color: #a2d061;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.overview_products .content .textContent p {
+  font-size: 1.2rem;
+}
+
+.overview_products .content .textContent span {
+  color: #ccc;
+}
+
+.overview_products .content .btnContent button.active {
+  background-color: #a2d061;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.recommendation_section {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 2rem;
+  padding: 2.5rem;
+}
+
+.recommendation_section > p {
+  font-size: 1.6rem;
+}
+
+.recommendation_section .bottom_section {
+  margin-top: 1rem;
+}
+
+.recommendation_section .bottom_section .content {
+  height: 100px;
+  background-color: #ecf6df;
+  margin-bottom: 1rem;
+  border-radius: 13px;
+  border: 1px solid #a2d061;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommendation_section .bottom_section .content .textContent {
+  flex: 6;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+}
+
+.recommendation_section .bottom_section .content .textContent span:first-child {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.recommendation_section .bottom_section .content .textContent span:last-child {
+  font-size: 1.2rem;
+}
+
+.recommendation_section .bottom_section .content .btnContent {
+  flex: 1;
+}
+
+.recommendation_section
+  .bottom_section
+  .content
+  .btnContent
+  button:first-child {
+  padding: 0.4rem 1.7rem;
+  background-color: #a2d061;
+  margin-right: 1rem;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 20px;
+}

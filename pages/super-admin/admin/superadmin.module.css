@@ -1,0 +1,254 @@
+.superAdmin_section {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+  padding-block: 1rem;
+}
+
+.superAdmin_section_container {
+  /* max-width: 1400px; */
+  margin: 0 auto;
+}
+
+.superAdmin_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 0px 30px;
+}
+.dashboad_wrapper {
+  margin: 20px 0px 0px;
+}
+
+.superAdmin_left_content {
+  position: sticky;
+  top: 20px;
+}
+
+.superAdmin_right_content {
+  flex: 7;
+}
+
+.cards_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.superAdmin_middle_section {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.active_user_card {
+  flex: 3;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 1%) 0px 10px 36px 0px, rgb(0 0 0 / 1%) 0px 0px 0px 1px;
+  border-radius: 15px;
+}
+
+.active_user_column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.active_user_chart {
+  width: 100%;
+  min-height: 150px;
+  background: linear-gradient(
+    90deg,
+    rgba(56, 63, 107, 1) 0%,
+    rgba(28, 31, 54, 1) 100%
+  );
+  border-radius: 7px;
+}
+
+.active_user_text p {
+  font-size: 1rem;
+}
+
+.active_user_text span {
+  font-size: 0.8rem;
+}
+
+.active_user_text span b {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.active_user_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.sales_overview {
+  flex: 5;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 1%) 0px 10px 36px 0px, rgb(0 0 0 / 1%) 0px 0px 0px 1px;
+  padding: 15px;
+}
+
+.bottom_section {
+  margin-top: 1rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 1rem;
+}
+
+.latest_members {
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 1%) 0px 10px 36px 0px, rgb(0 0 0 / 1%) 0px 0px 0px 1px;
+  flex: 5;
+  border-radius: 15px;
+}
+
+.latest_members_top_content {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest_members_top_content .heading {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.latest_members_top_content .right_icon {
+  margin-right: 1rem;
+}
+
+.latest_members_top_content .right_icon span {
+  cursor: pointer;
+}
+
+.latest_members_top_content .bottom_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-top: 0.6rem;
+}
+
+.latest_members_top_content .bottom_text span b {
+  color: #8792ab;
+  font-size: 0.9rem;
+}
+
+.table_container {
+  width: 100%;
+}
+
+.table_container table {
+  width: 100%;
+}
+
+.table_container table th {
+  color: #111;
+  padding: 10px;
+}
+
+.table_container table th:not(:last-child) {
+  padding-left: 1rem;
+  text-align: left;
+}
+.table_container td,
+.table_container th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.table_container table td {
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.table_container .image {
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+.table_container .progress {
+  width: 100%;
+  height: 7px; /* Adjust height as needed */
+  appearance: none;
+}
+
+/* Style the progress bar track */
+.table_container .progress::-webkit-progress-bar {
+  background-color: #f0f0f0; /* Set the background color of the progress bar */
+}
+
+/* Style the progress bar fill */
+.table_container .progress::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: #344767; /* Set the fill color of the progress bar */
+}
+
+.orders_overview {
+  padding: 0.7rem;
+  flex: 2;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 1%) 0px 10px 36px 0px, rgb(0 0 0 / 1%) 0px 0px 0px 1px;
+  border-radius: 15px;
+}
+
+.orders_overview_textContent h2,
+.sales_overview {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.orders_overview_textContent .bottom_text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
+.bottom_Content {
+  margin-top: 2rem;
+}
+
+.bottom_text .bottom_text_icon {
+  margin-top: 0.7rem;
+}
+
+.order_Content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.order_Content span {
+  position: relative;
+  top: 5px;
+}
+.order_right_content .text {
+  color: #5a6343;
+  font-size: 16px;
+}
+
+.order_right_content .time {
+  color: #aa9fb3;
+  font-size: 12px;
+}

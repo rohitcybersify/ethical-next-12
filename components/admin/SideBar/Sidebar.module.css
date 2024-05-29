@@ -1,0 +1,139 @@
+.Sidebar_container {
+  flex: 1;
+  width: 100%;
+  height: 98vh;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-inline: 10px;
+  max-width: 303px;
+}
+
+.sidebar_content {
+  width: 100%;
+  padding-block: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* 
+.horizontal_line {
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+} */
+
+.Sidebar_data {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.sidebar_data_content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  min-height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s all ease-in-out;
+  padding: 10px;
+  
+}
+
+.top_container {
+  width: 100%;
+}
+
+.User_info {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sidebar_data_content.active {
+  background-color: #f8f8f8;
+}
+.sidebar_data_content .sidebar_img{
+  padding: 8px !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 10px;
+  transition: .5s all ease-in-out;
+  border-radius: 9px;
+  background: #FFF;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.07);
+  display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sidebar_data_content.active .sidebar_img{
+  box-shadow: 2px 5px 12px 0px #A2D061;
+  background: #A2D061;
+
+}
+.logo {
+  object-fit: contain;
+}
+.sidebar_data_content .sidebar_img svg {
+  width: 22px !important;
+  height: 22px !important;
+}
+/* .sidebar_icon {
+  box-shadow: 1px 1px 2px #ccc;
+} */
+
+.sidebar_data_content:hover {
+  background-color: #f8f8f8;
+}
+
+.Sidebar_links {
+  font-size: 18px;
+  /* font-weight: 500; */
+  color: #858585;
+}
+
+.bottom_container {
+  background-color: #a2d061;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.bottom_container .content .top_content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.bottom_container .content .top_content{
+  min-height: 100px;
+}
+
+.bottom_container .content .top_content p:nth-child(2) {
+  font-size: 14px;
+}
+
+.bottom_container .content .bottom_content {
+  width: 100%;
+}
+
+.bottom_container .content .bottom_content button {
+  width: 100%;
+  background-color: #fff;
+  color: #a2d061;
+  font-size: 18px;
+  min-height: 40px;
+  padding: 5px 10px;
+  border-radius: 39px;
+  font-weight: 600;
+  transition: .5s all ease-in-out;
+  border: 1px solid #fff;
+}
+.bottom_container .content .bottom_content button:hover{
+  background-color: #a2d061;
+  color: #fff;
+  border: 1px solid #ffffff;
+}

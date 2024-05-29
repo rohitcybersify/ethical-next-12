@@ -1,0 +1,19 @@
+.edit_product_container .buttons {
+  width: 100%;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.edit_product_container .buttons button {
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #a2d061;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #a2d061;
+}
+
+.edit_product_container .buttons button:last-child {
+  margin-left: 1rem;
+  background-color: #a2d061;
+  color: #fff;
+}

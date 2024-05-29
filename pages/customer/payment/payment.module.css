@@ -1,0 +1,158 @@
+.middle_section {
+  padding: 2.5rem;
+  background-color: #fff;
+  margin-top: 2rem;
+  border-radius: 30px;
+}
+.right_icon {
+  width: 49px;
+  height: 31px;
+  background-color: #a2d061;
+  border-radius: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.middle_section .order_completion {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.middle_section .order_completion p {
+  font-size: 1.3rem;
+}
+.middle_section .order_detail_content {
+  display: flex;
+  justify-content: space-between;
+}
+.middle_section .order_detail_content span {
+  font-size: 0.9rem;
+  color: #828282;
+}
+.step_form_container {
+  margin-bottom: 2rem;
+}
+.wire_transfer_section {
+  margin-top: 1rem;
+  width: 100%;
+}
+.wire_transfer_section .container {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.wire_transfer_section .container .left_content {
+  flex: 14;
+}
+.wire_transfer_section .container .right_content {
+  flex: 14;
+}
+.wire_transfer_section .right_content .payment_option {
+  margin-bottom: 1rem;
+}
+.wire_transfer_section .right_content .payment_option input[type='radio'] {
+  margin-right: 7px;
+}
+.right_content .payment_form {
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.right_content .payment_form .inputs,
+.right_content .payment_form .inputs label,
+.right_content .payment_form .inputs input {
+  width: 100%;
+}
+.right_content .payment_form .inputs .card_cvv {
+  width: 50%;
+}
+.right_content .payment_form .inputs {
+  margin-bottom: 1rem;
+}
+.right_content .payment_form .inputs label {
+  font-size: 14px;
+  color: #9f9f9f;
+}
+.right_content .payment_form .inputs input {
+  height: 40px;
+  border-radius: 8px;
+  padding-left: 1rem;
+  border: 1px solid #f0f0f0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.right_content .payment_form .inputs input:focus {
+  outline: none;
+}
+.right_content .payment_form .inputs button {
+  width: 100%;
+  height: 40px;
+  background-color: #a2d061;
+  color: #fff;
+  border-radius: 8px;
+}
+.wire_transfer {
+  border: 1px solid #94909040;
+  border-radius: 15px;
+}
+.wire_transfer_wrapper {
+  display: flex;
+  gap: 20px;
+}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.textContent button {
+  background: #a2d061;
+  color: #fff;
+  width: 100%;
+  max-width: 150px;
+  min-height: 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid;
+  margin-top: 10px;
+}
+.textContent button:hover {
+  background: transparent;
+  color: #a2d061;
+}
+.wire_transfer > div:first-child {
+  padding: 45px 30px;
+}
+.wire_transfer > div:last-child {
+  padding: 45px 30px;
+}
+.textContent p {
+  color: #707069;
+}
+.textContent p span {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: #a2d061;
+  border-radius: 20px;
+  margin-right: 5px;
+  position: relative;
+  bottom: 2px;
+}
+.textContent h4 {
+  font-size: 17px;
+  color: #111;
+}
+.horizontal_line {
+  border: 1px solid #94909040;
+  width: 100%;
+}
+.left_content {
+  display: flex;
+}
+.left_content div {
+  flex: 1;
+}

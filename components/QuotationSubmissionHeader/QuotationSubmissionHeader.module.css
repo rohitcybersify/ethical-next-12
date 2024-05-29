@@ -1,0 +1,81 @@
+.QuotationSubmissionHeader .heading {
+  width: 100%;
+  color: #000;
+  font-family: 'Poppins' !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+  letter-spacing: 0.16px;
+  margin-bottom: 3rem;
+  margin-top: 0px;
+}
+
+.QuotationSubmissionHeader .horizontal_line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(162, 208, 97, 0.5);
+  position: relative;
+}
+.QuotationSubmissionHeader{
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 20px 0px;
+  z-index: 1;
+}
+.stepCount{
+  position: absolute;
+  top:-12px;
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.QuotationSubmissionHeader .title{
+  color: #111;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.28px;
+  margin: 40px 0px 0px;
+  font-family: 'Poppins' !important;
+}
+
+.stepCount span{
+  background-color: #fff;
+  color: #A2D061;
+  text-align: center;
+  border-radius: 50%;
+  height: 25px;
+  width:25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid #A2D061;
+}
+.stepCount span.active{
+  background-color: #A2D061;
+  color: #fff;
+}
+
+@media (max-width:1440px){
+  .QuotationSubmissionHeader .title{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px 0px 0px;
+  }
+  .QuotationSubmissionHeader .heading {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width:767px){
+  .QuotationSubmissionHeader .heading {
+    margin-top: 0px;
+  }
+}

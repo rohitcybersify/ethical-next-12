@@ -1,0 +1,236 @@
+.EditProduct_section {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+  padding-block: 1rem;
+}
+
+.EditProduct_section_container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.EditProduct_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.EditProduct_left_content {
+  flex: 2;
+}
+
+.EditProduct_right_content {
+  flex: 7;
+}
+
+.middle_section {
+  padding: 2.5rem;
+  background-color: #fff;
+  margin-top: 2rem;
+  border-radius: 30px;
+}
+.middle_section .order_completion {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.middle_section .order_completion p {
+  font-size: 1.3rem;
+}
+
+.middle_section .order_detail_content {
+  display: flex;
+  justify-content: space-between;
+}
+.middle_section .order_detail_content span {
+  font-size: 0.9rem;
+  color: #828282;
+}
+
+.right_icon {
+  width: 49px;
+  height: 31px;
+  background-color: #a2d061;
+  border-radius: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.order_product_container {
+  margin-top: 2rem;
+}
+
+.order_product_container > p {
+  margin-bottom: 1rem;
+}
+
+.order_product_container .imgContent {
+  width: 160px;
+  height: 160px;
+  background-color: #f6faef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+}
+
+.order_product_container .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.order_product_container .container .content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.order_product_container .container .content .textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.order_product_container .container .content .textContent p:last-child {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.order_product_container .container .content .textContent p {
+  font-size: 1.3rem;
+}
+
+.order_product_container .container .btnContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.order_product_container .container .btnContent button {
+  padding: 0.4rem 1.2rem;
+  border: 1px solid #a2d061;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  color: #a2d061;
+}
+
+.see_changes_container {
+  margin-top: 2rem;
+}
+
+.see_changes_container > p {
+  margin-bottom: 1rem;
+}
+
+.see_changes_container .icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  font-size: 12px;
+}
+
+.see_changes_container .icon_container label input {
+  display: none;
+}
+
+.see_changes_container .icon_container .file_icon {
+  cursor: pointer;
+  transform: rotate(220deg);
+}
+
+.see_changes_container .show_file {
+  width: 92px;
+  position: relative;
+  height: 92px;
+  background-color: #f6faef;
+  border: 1px dashed #a2d061;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.see_changes_container .show_file .cross_icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.note_changes_container {
+  margin-block: 2rem;
+}
+
+.note_changes_container > p {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.note_changes_container .content {
+  background-color: #f7f7f7;
+  border: 1px solid #cacaca;
+  padding: 2rem 2rem 2rem 1rem;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.cancelation_request_container p {
+  margin-bottom: 1rem;
+}
+
+.cancelation_request_container .cancelation_content {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  align-items: flex-start;
+  border-radius: 20px;
+  gap: 2rem;
+}
+
+.cancelation_content p {
+  flex: 5;
+}
+
+.cancelation_content button {
+  flex: 1;
+  background-color: #a2d061;
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 0.8rem 0.2rem;
+  color: #fff;
+}
+
+.bottom_button_content {
+  width: 100%;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.bottom_button_content button {
+  width: 115px;
+  height: 48px;
+  border: 1px solid #a2d061;
+  border-radius: 30px;
+  color: #a2d061;
+  font-size: 0.9rem;
+}
+
+.bottom_button_content button:last-child {
+  margin-left: 1rem;
+  width: 148px;
+  background-color: #a2d061;
+  color: #fff;
+}

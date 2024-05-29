@@ -1,0 +1,84 @@
+.recommended_sec {
+  border-radius: 30.101px;
+  background: #fff;
+  padding: 30px;
+  margin-top: 40px;
+}
+.recommended_secDiv > div {
+  display: flex;
+  border-radius: 13.545px;
+  border: 1.505px solid #00c1d5;
+  background: rgba(0, 193, 213, 0.04);
+  justify-content: space-between;
+  padding: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.res_btn {
+  display: flex;
+  gap: 10px;
+}
+.recommended_secDiv h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.271px;
+}
+
+.recommended_secDiv p {
+  color: #111;
+  font-family: 'DM Sans';
+  font-size: 21.071px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.211px;
+}
+
+.recommended_secDiv .first_btn {
+  border-radius: 70.737px;
+  border: 1px solid #a2d061;
+  background: #a2d061;
+  color: #fff;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  padding: 5px 20px;
+  transition: 0.5s all;
+}
+.recommended_secDiv .first_btn:hover {
+  border: 1px solid #a2d061;
+  background: transparent;
+  color: #a2d061;
+}
+.recommended_secDiv .sec_btn {
+  color: #111;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  border-radius: 70.737px;
+  background: transparent;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  transition: 0.5s all;
+  border: 1px solid transparent;
+}
+.sec_btn:hover {
+  border: 1px solid #a2d061;
+  background: #a2d061;
+  color: #fff;
+  font-family: 'DM Sans';
+}
