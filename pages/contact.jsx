@@ -119,16 +119,10 @@ const contact = () => {
 
   return (
     <>
-      <NextSeo
-        title={`Contact | Ethical Swag`}
-        description={`Use the form below to send your message. A member of our team will reach out to you within 1 business day. If you don't hear from us in this time frame, please check your spam box. Prefer to call? You can reach us at: :phone: 1-877-256-6998 :phone: 1-902-500-1086`}
-        canonical="https://ethicalswag.com/contact"
-        openGraph={{
-          url: 'https://ethicalswag.com/contact',
-          site_name: 'Ethical Swag',
-        }}
-      />
-
+       <NextSeo
+            title="Contact | Ethical Swag"
+            description="Use the form below to send your message. A member of our team will reach out to you within 1 business day. If you don't hear from us in this time frame, please check your spam box. Prefer to call? You can reach us at: :phone: 1-877-256-6998 :phone: 1-902-500-1086"
+        />
       <PrimaryHeader />
       <SecondaryHeader />
 

@@ -25,7 +25,7 @@ import { GA_TRACKING_ID } from '@lib/useFetch'
 import { useEffect } from 'react'
 import * as ga from '../lib/gtag'
 import Image from '../assets/bag_image.png'
-import { NextSeo } from 'next-seo'
+// import { NextSeo } from 'next-seo'
 builder.init(builderConfig.apiKey)
 
 export async function getStaticProps({ params }) {
@@ -129,34 +129,30 @@ export default function Page({ page }) {
   const title = page?.data?.title || 'Default Title'
 
   const description = page?.data?.description || 'Default description'
-
+   console.log(description,"descrptionsss")
   return (
     <>
-      <NextSeo
-    title={title}
-    description={description}
-    canonical={`https://ethicalswag.com${router.asPath}`}
-    openGraph={{
-      type: 'website',
-      url: `https://ethicalswag.com${router.asPath}`,
-      title: `${title}`,
-      description: `${description}`,
-      images: [
-        {
-          url: `https://test.cybersify.tech//Eswag//storage//app//public//images//office-and-supplies.jpg`,
-          width: 1200,
-          height: 630,
-          alt: 'Ethical Swag Team',
-        },
-      ],
-      site_name: 'Ethical Swag',
-    }}
-  />
       <Head>
+        {/* add meta tag custom */}
+        <meta charSet="utf-8" />
+        <title>Ethical swag pages {title}</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ethicalswag" />
+        <meta name="twitter:creator" content="@ethicalswag" />
+        <meta property="og:title" content="Ethical Swag | North America | Sustainable Promotional Products" />
+        <meta property="og:description" content="Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence." />
+        <meta property="og:url" content="https://ethicalswag.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://test.cybersify.tech//Eswag//storage//app//public//images//office-and-supplies.jpg" />
+        <meta property="og:image:alt" content="Ethical Swag - Sustainable Promotional Products" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="en-ca" />
+        <meta property="og:site_name" content="Ethical Swag" />
+        <meta name="description" content={`Page | ${description}`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <title>{title}</title>
-        <meta name="description" content={description} /> */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        {/* endmeta tag custom */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
