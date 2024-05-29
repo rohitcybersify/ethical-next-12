@@ -87,7 +87,7 @@ export default function MyApp({ Component, pageProps }) {
     // >\
     
     <>
-      {/* <DefaultSeo
+      <DefaultSeo
     title="Ethical Swag | North America | Sustainable Promotional Products"
     description="Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence."
     openGraph={{
@@ -109,7 +109,7 @@ export default function MyApp({ Component, pageProps }) {
       site: '@ethicalswag',
       cardType: 'summary_large_image',
     }}
-  /> */}
+  />
 
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistStore(store)}>
