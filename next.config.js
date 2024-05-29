@@ -2630,5 +2630,5 @@ module.exports = bundleAnalyzer({
         permanent: true,
       },
     ]  
-  },
+  }
 })
