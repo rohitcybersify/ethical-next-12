@@ -34,7 +34,8 @@ import categorySlice from 'redux-setup/categorySlice'
 import ordersSlice from '../redux-setup/ordersSlice'
 import pageSlice from '../redux-setup/pageSlice'
 import { DefaultSeo } from 'next-seo'
-import SEO from '../next-seo.config';
+import contactSlice from '../redux-setup/contactSlice'
+import { createWrapper } from 'next-redux-wrapper';
 // import { Elements } from '@stripe/react-stripe-js'
 // import { loadStripe } from '@stripe/stripe-js'
 
@@ -58,6 +59,7 @@ const combinedReducer = combineReducers({
   sidebar: sidebarSlice,
   userOrder: statusSlice,
   page: pageSlice,
+  contact : contactSlice
 })
 
 const persistConfig = { key: 'root', storage, version: 1 }
@@ -72,22 +74,21 @@ const store = configureStore({
       serializableCheck: false,
     }),
 })
-
 export default function MyApp({ Component, pageProps }) {
   const options = {
     // passing the client secret obtained from the server
     clientSecret:
       'sk_test_51OzXu4SG76jQkcdqbcqN5THTrNz2CjxTmZHDHfkCUClt3PjwMHn8Mr99Mkg1JT6GhcOQunAhRXNxJf9a24nrUoH300M9QrbB4J',
   }
-
+console.log(pageProps, "page props")
   return (
     // <Elements
     //   stripe={stripePromise}
     //   // options={options}
     // >
     <>
-      {/* <DefaultSeo
-        title="Ethical Swag | North America | Sustainable Promotional Products"
+      <DefaultSeo
+        title={pageProps ? pageProps : "Ethical Swag | North America | Sustainable Promotional Products"}
         description="Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence."
         openGraph={{
           type: 'website',
@@ -100,8 +101,8 @@ export default function MyApp({ Component, pageProps }) {
           site: '@ethicalswag',
           cardType: 'summary_large_image',
         }}
-      /> */}
-       <DefaultSeo {...SEO} />
+      />
+
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistStore(store)}>
           <StrictMode>

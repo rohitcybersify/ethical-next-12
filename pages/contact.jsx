@@ -9,6 +9,9 @@ import Calendar from 'react-calendar'
 import Styles from './../styles/Contact.module.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import { IoLocationSharp } from 'react-icons/io5'
+import { useSelector, useDispatch } from 'react-redux';
+import { setTitle, setDescription } from '../redux-setup/contactSlice';
+import { NextPageContext } from 'next';
 
 import {
   FaFacebookF,
@@ -26,6 +29,15 @@ import { toast } from 'react-toastify'
 import { NextSeo } from 'next-seo'
 
 const contact = () => {
+  const dispatch = useDispatch();
+  const title = useSelector((state) => state.contact.title);
+  const description = useSelector((state) => state.contact.description);
+
+  useEffect(() => {
+    dispatch(setTitle('Title you wanna show'));
+    dispatch(setDescription('Desc you wanna show'));
+  }, [dispatch]);
+
   const [terms, setTerms] = useState(false)
   const resetFormRef = useRef(null)
 
@@ -116,13 +128,15 @@ const contact = () => {
   const tileDisabled = ({ date, view }) => {
     return view === 'month' && date < new Date().setDate(new Date().getDate())
   }
-
+ 
   return (
     <>
-       <NextSeo
-            title="Contact | Ethical Swag"
-            description="Use the form below to send your message. A member of our team will reach out to you within 1 business day. If you don't hear from us in this time frame, please check your spam box. Prefer to call? You can reach us at: :phone: 1-877-256-6998 :phone: 1-902-500-1086"
-        />
+     {/* <h1>{title}</h1>
+      <p>{description}</p> */}
+       {/* <NextSeo
+            title={title}
+            description={description}
+        /> */}
       <PrimaryHeader />
       <SecondaryHeader />
 
@@ -369,6 +383,14 @@ const contact = () => {
       <Footer />
     </>
   )
+  
 }
+
+contact.getInitialProps = async ({ store }) => {
+  // Dispatch actions here if needed
+  return "test contact";
+};
+
+
 
 export default contact

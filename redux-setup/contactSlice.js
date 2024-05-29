@@ -5,8 +5,8 @@ const initialState = {
   title: '',
   description: '',
 };
-const mainSlice = createSlice({
-  name: 'main',
+const contactSlice = createSlice({
+  name: 'contact',
   initialState,
   reducers: {
     setTitle: (state, action) => {
@@ -17,6 +17,6 @@ const mainSlice = createSlice({
     },
   },
 });
-export const { setTitle, setDescription } = mainSlice.actions;
+export const { setTitle, setDescription } = contactSlice.actions;
 
-export default mainSlice.reducer;
+export default contactSlice.reducer;
