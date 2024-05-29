@@ -9,10 +9,6 @@ import Calendar from 'react-calendar'
 import Styles from './../styles/Contact.module.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import { IoLocationSharp } from 'react-icons/io5'
-import { useSelector, useDispatch } from 'react-redux';
-import { setTitle, setDescription } from '../redux-setup/contactSlice';
-import { NextPageContext } from 'next';
-
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -26,17 +22,9 @@ import {
 } from '../lib/validationSchemas'
 import useFetch from '../lib/useFetch'
 import { toast } from 'react-toastify'
-import { NextSeo } from 'next-seo'
+
 
 const contact = () => {
-  const dispatch = useDispatch();
-  const title = useSelector((state) => state.contact.title);
-  const description = useSelector((state) => state.contact.description);
-
-  useEffect(() => {
-    dispatch(setTitle('Title you wanna show'));
-    dispatch(setDescription('Desc you wanna show'));
-  }, [dispatch]);
 
   const [terms, setTerms] = useState(false)
   const resetFormRef = useRef(null)
@@ -131,12 +119,7 @@ const contact = () => {
  
   return (
     <>
-     {/* <h1>{title}</h1>
-      <p>{description}</p> */}
-       {/* <NextSeo
-            title={title}
-            description={description}
-        /> */}
+    
       <PrimaryHeader />
       <SecondaryHeader />
 
@@ -387,8 +370,10 @@ const contact = () => {
 }
 
 contact.getInitialProps = async ({ store }) => {
-  // Dispatch actions here if needed
-  return "test contact";
+  return {
+    title: 'Contact Page Title',
+    description: 'Contact Page Description',
+  };
 };
 
 

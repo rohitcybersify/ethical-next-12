@@ -34,8 +34,6 @@ import categorySlice from 'redux-setup/categorySlice'
 import ordersSlice from '../redux-setup/ordersSlice'
 import pageSlice from '../redux-setup/pageSlice'
 import { DefaultSeo } from 'next-seo'
-import contactSlice from '../redux-setup/contactSlice'
-import { createWrapper } from 'next-redux-wrapper';
 // import { Elements } from '@stripe/react-stripe-js'
 // import { loadStripe } from '@stripe/stripe-js'
 
@@ -58,8 +56,7 @@ const combinedReducer = combineReducers({
   socket: socketSlice,
   sidebar: sidebarSlice,
   userOrder: statusSlice,
-  page: pageSlice,
-  contact : contactSlice
+  page: pageSlice
 })
 
 const persistConfig = { key: 'root', storage, version: 1 }
@@ -82,14 +79,10 @@ export default function MyApp({ Component, pageProps }) {
   }
 console.log(pageProps, "page props")
   return (
-    // <Elements
-    //   stripe={stripePromise}
-    //   // options={options}
-    // >
     <>
       <DefaultSeo
-        title={pageProps ? pageProps : "Ethical Swag | North America | Sustainable Promotional Products"}
-        description="Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence."
+        title={pageProps ? pageProps.title : "Ethical Swag | North America | Sustainable Promotional Products"}
+        description={pageProps ? pageProps.description : "Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence."}
         openGraph={{
           type: 'website',
           locale: 'en-ca',
