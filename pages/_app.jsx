@@ -34,6 +34,7 @@ import categorySlice from 'redux-setup/categorySlice'
 import ordersSlice from '../redux-setup/ordersSlice'
 import pageSlice from '../redux-setup/pageSlice'
 import { DefaultSeo } from 'next-seo'
+import Image from '../assets/headerPics/main-product.png'
 // import { Elements } from '@stripe/react-stripe-js'
 // import { loadStripe } from '@stripe/stripe-js'
 
@@ -78,28 +79,37 @@ export default function MyApp({ Component, pageProps }) {
     clientSecret:
       'sk_test_51OzXu4SG76jQkcdqbcqN5THTrNz2CjxTmZHDHfkCUClt3PjwMHn8Mr99Mkg1JT6GhcOQunAhRXNxJf9a24nrUoH300M9QrbB4J',
   }
-
+  // console.log(Image,"home page image")
   return (
     // <Elements
     //   stripe={stripePromise}
     //   // options={options}
-    // >
+    // >\
+    
     <>
       <DefaultSeo
-        title="Ethical Swag | North America | Sustainable Promotional Products"
-        description="Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence."
-        openGraph={{
-          type: 'website',
-          locale: 'en-ca',
-          url: 'https://ethicalswag.com/',
-          siteName: 'Ethical Swag',
-        }}
-        twitter={{
-          handle: '@ethicalswag',
-          site: '@ethicalswag',
-          cardType: 'summary_large_image',
-        }}
-      />
+    title="Ethical Swag | North America | Sustainable Promotional Products"
+    description="Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence."
+    openGraph={{
+      type: 'website',
+      locale: 'en-ca',
+      url: 'https://ethicalswag.com/',
+      siteName: 'Ethical Swag',
+      images: [
+        {
+          url: 'https://test.cybersify.tech//Eswag//storage//app//public//images//office-and-supplies.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Ethical Swag - Sustainable Promotional Products',
+        },
+      ],
+    }}
+    twitter={{
+      handle: '@ethicalswag',
+      site: '@ethicalswag',
+      cardType: 'summary_large_image',
+    }}
+  />
 
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistStore(store)}>

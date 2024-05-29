@@ -24,6 +24,8 @@ import CountryBasedText from '@components/locationStatus/CountryBasedText'
 import { GA_TRACKING_ID } from '@lib/useFetch'
 import { useEffect } from 'react'
 import * as ga from '../lib/gtag'
+import Image from '../assets/bag_image.png'
+import { NextSeo } from 'next-seo'
 builder.init(builderConfig.apiKey)
 
 export async function getStaticProps({ params }) {
@@ -124,12 +126,32 @@ export default function Page({ page }) {
     )
   }
 
-  // const title = page?.data?.title || 'Default Title'
+  const title = page?.data?.title || 'Default Title'
 
-  // const description = page?.data?.description || 'Default description'
+  const description = page?.data?.description || 'Default description'
 
   return (
     <>
+      <NextSeo
+    title={title}
+    description={description}
+    canonical={`https://ethicalswag.com${router.asPath}`}
+    openGraph={{
+      type: 'website',
+      url: `https://ethicalswag.com${router.asPath}`,
+      title: `${title}`,
+      description: `${description}`,
+      images: [
+        {
+          url: `https://test.cybersify.tech//Eswag//storage//app//public//images//office-and-supplies.jpg`,
+          width: 1200,
+          height: 630,
+          alt: 'Ethical Swag Team',
+        },
+      ],
+      site_name: 'Ethical Swag',
+    }}
+  />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <title>{title}</title>
