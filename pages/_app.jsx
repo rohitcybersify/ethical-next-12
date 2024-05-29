@@ -16,6 +16,7 @@ import adminSlice from '../redux-setup/adminSlice'
 import statusSlice from '../redux-setup/orderStatus'
 import sidebarSlice from '../redux-setup/sidebarSlice'
 import socketSlice from '../redux-setup/socketSlice'
+import mainReducer from './features/mainSlice'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { StrictMode, useEffect, useState } from 'react'
@@ -34,7 +35,7 @@ import categorySlice from 'redux-setup/categorySlice'
 import ordersSlice from '../redux-setup/ordersSlice'
 import pageSlice from '../redux-setup/pageSlice'
 import { DefaultSeo } from 'next-seo'
-import Image from '../assets/headerPics/main-product.png'
+import SEO from '../next-seo.config';
 // import { Elements } from '@stripe/react-stripe-js'
 // import { loadStripe } from '@stripe/stripe-js'
 
@@ -56,6 +57,7 @@ const combinedReducer = combineReducers({
   orders: ordersSlice,
   socket: socketSlice,
   sidebar: sidebarSlice,
+  main: mainReducer,
   userOrder: statusSlice,
   page: pageSlice,
 })
@@ -74,20 +76,17 @@ const store = configureStore({
 })
 
 export default function MyApp({ Component, pageProps }) {
+
+  
   const options = {
     // passing the client secret obtained from the server
     clientSecret:
       'sk_test_51OzXu4SG76jQkcdqbcqN5THTrNz2CjxTmZHDHfkCUClt3PjwMHn8Mr99Mkg1JT6GhcOQunAhRXNxJf9a24nrUoH300M9QrbB4J',
   }
-  // console.log(Image,"home page image")
+ 
   return (
-    // <Elements
-    //   stripe={stripePromise}
-    //   // options={options}
-    // >\
-    
     <>
-      <DefaultSeo
+      {/* <DefaultSeo
     title="Ethical Swag | North America | Sustainable Promotional Products"
     description="Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence."
     openGraph={{
@@ -109,11 +108,12 @@ export default function MyApp({ Component, pageProps }) {
       site: '@ethicalswag',
       cardType: 'summary_large_image',
     }}
-  />
-
+  /> */}
+     
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistStore(store)}>
           <StrictMode>
+          <DefaultSeo {...SEO} />
             <Component {...pageProps} suppressHydrationWarning />
 
             <ToastContainer />
