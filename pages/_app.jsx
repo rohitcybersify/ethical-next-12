@@ -97,7 +97,7 @@ export default function MyApp({ Component, pageProps }) {
       siteName: 'Ethical Swag',
       images: [
         {
-          url: 'https://test.cybersify.tech//Eswag//storage//app//public//images//office-and-supplies.jpg',
+          url: 'https://ethical-images.s3.ca-central-1.amazonaws.com/hero_home_section_image.jpg',
           width: 1200,
           height: 630,
           alt: 'Ethical Swag - Sustainable Promotional Products',
