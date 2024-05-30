@@ -369,7 +369,7 @@ const contact = () => {
   
 }
 
-contact.getInitialProps = async ({ store }) => {
+contact.getInitialProps = async () => {
   return {
     title: 'Contact Page Title',
     description: 'Contact Page Description',

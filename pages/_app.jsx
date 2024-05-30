@@ -77,24 +77,32 @@ export default function MyApp({ Component, pageProps }) {
     clientSecret:
       'sk_test_51OzXu4SG76jQkcdqbcqN5THTrNz2CjxTmZHDHfkCUClt3PjwMHn8Mr99Mkg1JT6GhcOQunAhRXNxJf9a24nrUoH300M9QrbB4J',
   }
-console.log(pageProps, "page props")
+console.log(pageProps.title, "page props")
   return (
     <>
       <DefaultSeo
-        title={pageProps ? pageProps.title : "Ethical Swag | North America | Sustainable Promotional Products"}
-        description={pageProps ? pageProps.description : "Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence."}
-        openGraph={{
-          type: 'website',
-          locale: 'en-ca',
-          url: 'https://ethicalswag.com/',
-          siteName: 'Ethical Swag',
-        }}
-        twitter={{
-          handle: '@ethicalswag',
-          site: '@ethicalswag',
-          cardType: 'summary_large_image',
-        }}
-      />
+     title={pageProps.title ? pageProps.title : "Ethical Swag | North America | Sustainable Promotional Products"}
+     description={pageProps.description ? pageProps.description : "Ethical Swag provides a suite of turn-key services designed with convenience in mind to streamline your swag management process and elevate your brand presence."}
+    openGraph={{
+      type: 'website',
+      locale: 'en-ca',
+      url: 'https://ethicalswag.com/',
+      siteName: 'Ethical Swag',
+      images: [
+        {
+          url: 'https://ethical-images.s3.ca-central-1.amazonaws.com/hero_home_section_image.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Ethical Swag - Sustainable Promotional Products',
+        },
+      ],
+    }}
+    twitter={{
+      handle: '@ethicalswag',
+      site: '@ethicalswag',
+      cardType: 'summary_large_image',
+    }}
+  />
 
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistStore(store)}>

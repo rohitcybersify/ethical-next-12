@@ -2021,7 +2021,7 @@ module.exports = bundleAnalyzer({
       },
       {
         source: '/products/web-cam-cover-%F0%9F%98%80%F0%9F%98%80%F0%9F%98%80%F0%9F%8D%81',
-        destination: '/category',
+        destination: '/products/jobbs-webcam-cover',
         permanent: true,
       },
       {

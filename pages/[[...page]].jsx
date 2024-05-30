@@ -37,15 +37,14 @@ export async function getStaticProps({ params }) {
         },
       })
       .toPromise()) || null
-
+      const title = page?.data?.title || 'Default Title'
+      const description = page?.data?.description || 'Default description'
   return {
     props: {
       page,
+      title,
+      description,
     },
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 5 seconds
-    // revalidate: 5,
   }
 }
 
@@ -126,22 +125,11 @@ export default function Page({ page }) {
     )
   }
 
-  const title = page?.data?.title || 'Default Title'
-//  console.log(title,"pages title")
-  const description = page?.data?.description || 'Default description'
-
+  
   return (
     <>
-    
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <title>{title}</title>
-        <meta name="description" content={description} /> */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-        <NextSeo
-       title={title}
-       description={description}
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -198,3 +186,5 @@ export default function Page({ page }) {
     </>
   )
 }
+
+
