@@ -77,7 +77,7 @@ export default function MyApp({ Component, pageProps }) {
     clientSecret:
       'sk_test_51OzXu4SG76jQkcdqbcqN5THTrNz2CjxTmZHDHfkCUClt3PjwMHn8Mr99Mkg1JT6GhcOQunAhRXNxJf9a24nrUoH300M9QrbB4J',
   }
-console.log(pageProps.title, "page props")
+console.log(pageProps, "page props")
   return (
     <>
       <DefaultSeo
@@ -90,7 +90,7 @@ console.log(pageProps.title, "page props")
       siteName: 'Ethical Swag',
       images: [
         {
-          url: 'https://ethical-images.s3.ca-central-1.amazonaws.com/hero_home_section_image.jpg',
+          url: "https://ethical-images.s3.ca-central-1.amazonaws.com/hero_home_section_image.jpg",
           width: 1200,
           height: 630,
           alt: 'Ethical Swag - Sustainable Promotional Products',

@@ -39,6 +39,7 @@ export async function getStaticProps({ params }) {
       .toPromise()) || null
       const title = page?.data?.title || 'Default Title'
       const description = page?.data?.description || 'Default description'
+      
   return {
     props: {
       page,
