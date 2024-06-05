@@ -1,0 +1,16 @@
+.SustainableChoices h2{
+    text-align: center;
+    margin: 40px 0px;
+}
+.Img_textrap p{
+    color: rgba(17, 17, 17, 0.8);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.16px;
+    align-self: stretch;
+}
+.image{
+    position: relative;
+}

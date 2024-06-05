@@ -1,0 +1,115 @@
+.banner_image {
+  /* background-image: url(../../assets/banner_image.png); */
+  background-size: cover;
+  background-position: center;
+  width: 98%;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 20px 20px 20px 100px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  }
+  .banner_image h1{
+    color: rgba(29,29,29,1);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    position: relative;
+    max-width: 604px;
+    border-style: solid;
+  }
+  .banner_image p{
+    text-align: left;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    -moz-letter-spacing: 0.24px;
+    -ms-letter-spacing: 0.24px;
+    letter-spacing: 0.24px;
+    position: relative;
+    margin-top: 36px; 
+  }
+  .banner_image button.banner_button {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 46px;
+    background-color: rgba(255,255,255,0);
+    color: rgba(255,255,255,1);
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    border-width: 2px;
+    border-style: solid;
+    max-width: 201px;
+    width: 100%;
+    min-height: 64px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-color: rgba(255,255,255,1);
+    transition: .5s all;
+}
+.banner_image button.banner_button:hover{
+  color: rgba(162,208,97,1);
+  background-color: rgba(255,255,255,1);
+}
+
+
+/* responsive */
+@media (max-width:1440px){
+  .banner_image h1{
+    font-size: 46px ;
+    line-height: 58px;
+  }
+  .banner_image p{
+    font-size: 20px;
+  }
+  .banner_image button.banner_button {
+    padding: 0px;
+    font-size: 19px;
+    min-height: 50px;
+    margin-top: 35px;
+    min-width: 160px;
+    width: 100%;
+    max-width: 160px;
+  }
+}
+
+@media (max-width:991px){
+  .banner_image h1{
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .banner_image p{
+    max-width: 360px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 19px;
+  }
+  .banner_image button.banner_button {
+    margin-top: 30px;
+    font-size: 18px;
+    min-height: 50px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .banner_image {
+    padding: 20px;
+    }
+}
+
+  

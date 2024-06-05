@@ -1,0 +1,72 @@
+.slider_container {
+    max-width: 1368px;
+    margin: 20px auto 0px;
+    width: 100%;
+    padding: 0px 15px;
+}
+.Additonal_content .AdditionalCard{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(241, 241, 241);
+    border-radius: 30px;
+    gap: 0px;
+    padding: 30px;
+    min-height: 380px;
+    width: 100%;
+    max-width: 97%;
+    cursor: pointer;
+    text-align: center;
+}
+.Additonal_content .AdditionalCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 64px 0px;
+    background-color: rgb(255, 255, 255);
+}
+.Additonal_content .AdditionalCard h4{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+.Additonal_content .AdditionalCard p{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(88, 88, 88);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 0px;
+}
+.Additonal_content .AdditionalCard .img_addional{
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 14px 4px #a2d06136;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 18px;
+}
+.additional_heading{
+    text-align: center;
+    margin: 0px 0px 30px;
+}
+
+@media (max-width:767px){
+    .Additonal_content .AdditionalCard .img_addional{
+        width: 60px;
+        height: 60px;
+    }
+    .Additonal_content .AdditionalCard{
+        padding: 20px 15px;
+    }
+}

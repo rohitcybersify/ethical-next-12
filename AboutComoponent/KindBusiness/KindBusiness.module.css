@@ -1,0 +1,85 @@
+.Kindofbusiness{
+    background-image: url(../../../assets/kindObusiness.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0px 80px;
+    margin: 70px 0px;
+}
+.Video_sec, .Video_sec .Overlay_videoImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 410px;
+}
+.Video_sec .Overlay_videoImg::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 98%;
+    cursor: pointer;
+    background-color: #0000008c;
+    content: '';
+    border-radius: 20px;
+}
+.Video_sec .Overlay_videoImg img{
+    border-radius: 20px;
+}
+.playButton{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.playButton svg{
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    fill: #ffffff;
+
+}
+.Kindofbusiness h2{
+    margin: 40px 0px;
+    color: #fff;
+}
+.Kindofbusiness p{
+color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.16px;
+    align-self: stretch;
+}
+.Video_sec iframe{
+    border-radius: 20px;
+    min-height: 350px;
+    width: 100%;
+    max-width: 640px;
+}
+@media (max-width:991px){
+    .Kindofbusiness h2{
+        margin: 30px 0px 10px;
+    }
+    .playButton svg {
+        max-width: 30px;
+        height: 30px;
+        fill: #ffffff;
+    }
+}
+@media (max-width:767px){
+    .Video_sec iframe {
+        border-radius: 20px;
+        min-height: 210px;
+        width: 100%;
+        max-width: 640px;
+    }
+    .Kindofbusiness{
+        margin: 50px 0px;
+        padding: 20px 0px 50px;
+    }
+
+}

@@ -1,0 +1,70 @@
+.cart_left_butttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.8rem;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cart_left_butttons .button {
+  min-width: 111px;
+  padding: 10px;
+  min-height: 57px;
+  border-radius: 130px;
+  border: 1px solid var(--green, #a2d061);
+  background: rgba(162, 208, 97, 0.2);
+  color: var(--green, #a2d061);
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+.cart_left_butttons .button:hover {
+  color: #fff;
+  background-color: #a2d061;
+}
+.cart_left_butttons button:hover:nth-child(2) {
+  color: #a2d061;
+  background-color: transparent;
+}
+.cart_left_butttons button:nth-child(2) {
+  background: var(--green, #a2d061);
+  border: 1px solid var(--green, #a2d061);
+  min-width: 161px;
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+}
+
+@media (max-width: 1440px) {
+  .cart_left_butttons .button {
+    min-height: 49px;
+  }
+  .cart_left_butttons {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 1200px) {
+  .cart_left_butttons .button {
+    min-height: 49px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cart_left_butttons {
+    margin: 20px 0 0px;
+  }
+}
+@media (max-width: 767px) {
+  .cart_left_butttons .button {
+    min-height: 47px;
+  }
+  .cart_left_butttons button:nth-child(2) {
+    min-width: 120px;
+  }
+}

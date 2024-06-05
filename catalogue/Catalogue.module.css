@@ -1,0 +1,59 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+.collection_wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  /* justify-content: space-between; */
+}
+.collection_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.collection_container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+.div_loopData {
+  position: relative;
+}
+.banner_heading {
+  text-align: center;
+  margin: 40px auto;
+}
+.banner_heading p {
+  font-size: 16px;
+  font-family: dm sans;
+}
+.banner_heading h2 {
+  font-size: 40px;
+  font-family: poppins;
+}
+.collection_wrapper .div_loopData h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 1;
+  padding: 5px 15px;
+}
+.collection_wrapper .div_loopData img {
+  width: 100%;
+  height: 100%;
+}
+.div_loopData {
+  position: relative;
+}

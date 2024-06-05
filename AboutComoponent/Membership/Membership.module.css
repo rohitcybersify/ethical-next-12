@@ -1,0 +1,64 @@
+.membershipsSlider{
+    background-color: rgb(245, 245, 247);
+    padding: 70px 0px;
+}
+.membershipsContent p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.15px;
+    margin-top: 15px;
+}
+.MembershipCard{
+    border-radius: 30px;
+    border: 1px solid rgb(228, 228, 228);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-left: 0px;
+    width: 100%;
+    padding: 30px 23px 30px;
+    flex-direction: column;
+    min-height: 358px;
+    align-items: start;
+    text-align: left;
+    max-width: 95%;
+}
+.MembershipCard h4{
+    color: rgb(17, 17, 17);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 133.38%;
+    letter-spacing: 0.17px;
+    align-self: stretch;
+    margin-top: 20px;
+}
+.MembershipCard p{
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.15px;
+    align-self: stretch;
+    margin-top: 17px;
+}
+.MembershipCard img {
+    object-fit: contain;
+    width: 70px !important;
+    margin: 0 !important;
+    height: 70px !important;
+}
+.img_addional{
+    margin-left: 0px;
+}
+
+@media (max-width:600px){
+    .MembershipCard{
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 100%;
+    }
+}

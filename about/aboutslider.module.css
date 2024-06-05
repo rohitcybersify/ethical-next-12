@@ -1,0 +1,139 @@
+.testimoanilContent{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.testimoanilContent>div:first-child{
+    flex: 5;
+}
+.testimoanilContent>div:last-child{
+    flex: 7;
+}
+.testimonail_sec p.main_para{
+    margin-top: 20px;
+    line-height: 28px;
+    text-align: left;
+    font-size: 14px;
+    color: rgb(17, 17, 17);
+    font-family: "DM Sans", sans-serif;
+}
+.testimonail_sec h3{
+    margin-top: 8.6px;
+    line-height: 24px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+.testimonail_sec h4{
+    line-height: 22px;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(17, 17, 17);
+    font-family: "DM Sans", sans-serif;
+}
+.testimonail_sec p.timing{
+    line-height: 28px;
+    height: auto;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(176, 176, 176);
+    font-family: "DM Sans", sans-serif;
+}
+.start_icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.start_icons svg{
+    fill:#FFBC11;
+}
+.testimoanilContent p{
+    margin-top: 0px;
+    line-height: normal;
+    height: auto;
+    color: rgb(17, 17, 17);
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+}
+.testimoanilContent p.paragraph{
+    color: rgba(17, 17, 17, 0.5);
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .teammates{
+    height: auto;
+    padding: 30px 10px 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    min-height: 190px;
+    width: 100%;
+    max-width: 94%;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(189, 16, 224, 0.11);
+    text-align: center;
+}
+.teammate_img{
+    width: 100%;
+    max-width: 80px;
+    margin: 0px auto 10px;
+}
+  .teammates h4{
+    margin-top: 0px;
+    line-height: normal;
+    height: auto;
+    text-align: center;
+    color: rgb(141, 67, 153);
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+}
+.testimoanilContent .Teammate_profession{
+    margin-top: 5px;
+    line-height: 20px;
+    height: auto;
+    text-align: center;
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Teammate_Place{
+    margin-top: 5px;
+    line-height: 20px;
+    height: auto;
+    text-align: center;
+    color: rgb(77, 77, 77);
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:1024px){
+    .testimoanilContent{
+display: block;
+    }
+    .testimoanilContent h2{
+        text-align: center;
+    }
+    .testimoanilContent>div:first-child,  .testimoanilContent>div:last-child{
+        flex: unset;
+    }
+    .testimoanilContent>div:last-child{
+        padding-bottom: 30px;
+    }
+    
+    
+    .testimoanilContent p{
+        text-align: center;
+    }
+}
+
+
