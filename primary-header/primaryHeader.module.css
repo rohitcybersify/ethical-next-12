@@ -1,0 +1,223 @@
+/* h1, h2, h3, h4, h5{
+    font-family: Poppins;
+  } */
+/* p, div, span {
+    font-family: 'DM Sans', sans-serif;
+  } */
+
+.top_bar {
+  background-color: #a2d061;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.primary_header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  max-width: 98%;
+  /* padding: 0 15px; */
+  margin: 0 auto;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.14px;
+  text-transform: capitalize;
+  min-height: 45px;
+}
+.top-bar .container {
+  height: 50px;
+}
+.top_barbtn {
+  background: transparent;
+  border: 0px;
+  color: #fff;
+}
+.tap_annument {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  background: transparent;
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  border: 0px;
+  text-transform: capitalize;
+  font-family: 'DM Sans', sans-serif !important;
+}
+.tap_annument:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.annument_dropdown {
+  min-width: 10rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* .tap_annument:focus-visible, button:focus-visible {
+      --tw-ring-shadow: none;
+    }
+     */
+.container_left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.offer_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.arrowDown {
+  height: 14px;
+  margin-top: 1px !important;
+}
+
+.container_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search_container {
+  border-bottom: 1px solid #fff;
+  padding: 5px 0px;
+  display: flex;
+  gap: 5px;
+}
+.container_right .login-signup img,
+.container_right .cursor_pointer img {
+  filter: invert(1);
+}
+.container_right input {
+  color: #fff;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  background: transparent;
+  border: 0px;
+}
+.container_right input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.container_right input:focus-visible {
+  outline: 0px;
+}
+/* input[type="text"]:focus {
+      border: none;
+      outline: none;
+    } */
+
+.login_div {
+  border-right: 1px solid #ecf6df;
+  padding-right: 20px;
+}
+
+.login_div:last-child {
+  padding-left: 10px;
+  border-right: 0;
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  .container_right .search_container,
+  .container_left .tap_annument {
+    display: none;
+  }
+  .primary_header_container {
+    width: 100%;
+    max-width: 95%;
+  }
+}
+
+.shop_submenu {
+  cursor: pointer;
+  /* border-radius: 10px; */
+  /* background-color: #fff; */
+  padding: 10px;
+  transition: 0.2s all ease-in-out;
+}
+.shop_submenu:hover {
+  background-color: #f7f8fa;
+}
+
+/* offer dropdown css start */
+.position_relative {
+  position: relative;
+}
+.offer_wrapper {
+  max-width: 285px;
+  max-height: 300px;
+  position: absolute;
+  min-width: 16px;
+  min-height: 16px;
+  overflow-x: hidden;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 11%),
+    0 8px 10px 1px rgb(162 208 97 / 14%), 0 3px 14px 2px rgb(162 208 97 / 5%);
+  overflow-y: auto;
+  z-index: 9999;
+  background: #fff;
+  left: 180px;
+  top: 50px;
+  border-radius: 10px;
+  /* padding: 15px; */
+}
+.offer_wrapper::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+.offer_wrapper::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+}
+.offer_wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin: 20px 0;
+  height: 20px;
+}
+.offer_wrapper ul li {
+  font-size: 15px;
+  line-height: 26px;
+  padding: 10px 14px;
+  border-bottom: 2px solid #f0f0f08c;
+  color: #777;
+  cursor: pointer;
+  position: relative;
+}
+.bold_text {
+  font-weight: 500;
+  color: #111;
+}
+
+.hover_border {
+  display: block;
+  height: calc(100% + 1.5px);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease;
+  width: 5px;
+  background-color: #a2d061;
+}
+
+.offer_wrapper ul li:hover .hover_border {
+  opacity: 1;
+}
+.offer_wrapper ul li:hover .bold_text {
+  text-decoration: underline;
+}

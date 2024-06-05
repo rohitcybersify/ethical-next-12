@@ -1,0 +1,83 @@
+.share_icon_collections {
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.share_linkicons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+.share_linkicons a{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 20%;
+  max-width: 23%;
+  font-size: 12px;
+}
+.share_product{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(26 26 26 / 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.innner_product{
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  position: relative;
+  margin: 0px 15px;
+  
+}
+.innner_product .Share_cross{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.innner_product h3{
+  font-size: 20px;
+  text-align: left;
+  font-weight: 500;
+}
+.copy_Links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.copy_Links p{
+  font-size: 12px;
+  text-align: left;
+}
+.innner_product button{
+  font-size: 12px;
+  background-color: #f1f1f1;
+  padding: 6px 20px;
+  border-radius: 30px;
+  color: #2b93df;
+}
+.share_icon_collections h5{
+  font-size: 13px;
+  font-weight: 500;
+}

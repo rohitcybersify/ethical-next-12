@@ -1,0 +1,29 @@
+.pagination_container {
+  width: 100%;
+  background: #fafafa;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 8px;
+  /* text-align: center;
+  width: 100%;
+  max-width: fit-content;
+  margin: 0px auto 50px; */
+}
+
+.pagination_container .pagination_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.current_page {
+  background-color: #d3d3d3;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

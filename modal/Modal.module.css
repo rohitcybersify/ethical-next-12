@@ -1,0 +1,312 @@
+.overlay{
+  position: fixed;
+  z-index: 1;
+  /* padding-top: 100px; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: #38383861;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(56, 56, 56, 0.1);
+  -webkit-backdrop-filter: blur(25.100000381469727px);
+  backdrop-filter: blur(25.100000381469727px);
+  z-index: 9;
+}
+
+.modal_content{
+  background-color: #fefefe;
+  background: url(../../assets/headerPics/Popup-1.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  padding: 20px;
+  /* border: 1px solid #888; */
+  width: 100%;
+  max-width: 790px;
+  position: relative;
+  height: auto;
+  border-radius: 20px;
+  padding: 60px;
+}
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  .Calendar_wrapper{
+    max-width: 100%;
+    
+  }
+  .Calendar_wrapper h3{
+    font-size: 26px;
+    color: #fff;
+    line-height: 38px;
+    max-width: 400px;
+    margin: 0 auto 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .Calendar_wrapper p{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 30px;
+    font-family: 'DM Sans';
+    line-height: 30px;
+    text-align: center;
+  }
+  .Calendar_wrapper button{
+    font-size: 18px;
+  }
+  .Calendar_wrapper .Popup_btncalender{
+    font-size: 16px !important;
+    border: 1px solid #fff !important;
+    padding: 10px 20px  !important;
+    border-radius: 30px;
+    color: #fff;
+    transition: .5s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Calendar_wrapper .Popup_btncalender:hover{
+    background: #fff;
+    color: #a2d061;
+    border: 1px solid #fff;
+  }
+
+
+  .Calendar_wrapper .Popup_btncalenderTwo{
+    color: #a2d061;
+    background: #fff;
+    border: 1px solid #fff !important;
+    border-radius: 30px;
+    padding: 10px 20px !important;
+    transition: .5s all;
+    min-width: 160px;
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .Calendar_wrapper .Popup_btncalenderTwo:hover{
+    background-color: transparent !important;
+    color: #fff !important;
+  }
+.react-calendar{
+  border: 0px  !important;
+}
+  .Calendar_content_wrapper{
+    width: 100%;
+  }
+
+  .Calendar_content_wrapper h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 53px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+  }
+  .Calendar_content_wrapper p{
+    font-size: 18px;
+    margin: 20px 0px 0px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+  }
+  .label_field{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .Popup_btnone{
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+    width: 100%;
+    max-width: 323px;
+    min-width: 323px;
+    transition: .5s all;
+  }
+  .Popup_btnone:hover{
+    background: #fff;
+    color: #a2d061;
+    border: 1px solid #fff;
+  }
+  .Popup_btntwo{
+    font-size: 18px;
+    color: #a2d061;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 323px;
+    min-width: 323px;
+    transition: .5s all;
+  }
+  .Popup_btntwo:hover{
+    background-color: transparent;
+    color: #fff;
+  }
+  .label_field label{
+   padding-left: 5px;
+    gap: 10px;
+  }
+
+  .submit_btn {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    border-radius: 20px;
+    border: 1px solid #A2D061;
+    background: #A2D061;
+    padding: 12px;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    transition: all .3s ease-in;
+    margin-top: 30px;
+}
+
+.submit_btn:hover{
+  background-color: transparent;
+  color: #A2D061;
+}
+
+.Calendar_wrapper .react-calendar {
+  width: 100%;
+  max-width: 350px !important;
+  margin: 0 auto !important;
+  background: white;
+  border: 0px solid #a0a096;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  border-radius: 30px !important;
+  padding: 20px !important;
+}
+
+
+/* responisve */
+@media (max-width:1440px){
+  .Calendar_content_wrapper h2{
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .Calendar_content_wrapper p{
+    font-size: 14px;
+    margin: 10px 0px 0px;
+    line-height: 26px;
+  }
+  .Popup_btnone, .Popup_btntwo{
+    font-size: 14px;
+    padding: 10px 10px;
+    max-width: 273px;
+    min-width: 263px;
+    transition: .5s all;
+  }
+  .modal_content{
+    padding: 50px 30px;
+}
+.Calendar_wrapper h3 {
+  font-size: 22px;
+  line-height: 34px;
+  max-width: 100%;
+  margin: 0 auto 20px;
+}
+.Calendar_wrapper .Popup_btncalender, .Calendar_wrapper .Popup_btncalenderTwo {
+  font-size: 14px;
+  padding: 2px 30px;
+  height: 36px;
+  min-width: 100px;
+}
+.Calendar_wrapper p {
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 28px;
+
+}
+.label_field{
+  margin-top: 20px;
+}
+
+.Calendar_wrapper button {
+  font-size: 14px;
+}
+.Calendar_wrapperbutton {
+  font-size: 14px;
+}
+}
+@media (max-width:1024px){
+  .modal_content{
+    max-width: 600px;
+    padding: 40px;
+  }
+}
+@media screen and (max-width:767px) {
+  .modal_content{
+    max-width: 90%;
+  }
+  .Calendar_content_wrapper h2{
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .Calendar_wrapper {
+    max-width: 50%;
+}
+.Popup_btnone, .Popup_btntwo{
+  font-size: 14px;
+  padding: 10px 10px;
+  max-width: 263px;
+  min-width: 243px;
+}
+}
+@media screen and (max-width:765px) {
+.flex_calender{
+  flex-wrap:wrap;
+  justify-content: center;
+
+}
+.Calendar_wrapper{
+  max-width: 100%;
+}
+
+.Calendar_content_wrapper{
+  max-width: 100%;
+  width: 100%;
+}
+
+}
+@media screen and (max-width:580px) {
+  .modal_content{
+    padding: 25px 20px;
+  }
+.close{
+  top: 0;
+  right: 15px;
+}
+}
