@@ -1,0 +1,277 @@
+.OurMissionImg{
+    background-image: url(../../assets/certifiy_corp.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-height: 500px;
+    padding-right: 50px;
+    margin-bottom: 100px;
+}
+.OurMissionContent{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 34px 0px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    margin-bottom: -65px;
+    width: 100%;
+    max-width: 676px;
+    padding: 50px 80px 50px 47px;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+}
+
+.AwardsNominations_wrap .AwardsImg, .AwardsImg {
+    border: 1px solid #f3f3f3;
+    border-radius: 30px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 410px;
+}
+.AwardsNominations .AwardsImg{
+    border: 0px !important;
+}
+.OurMissionContent p{
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+    margin-top: 20px;
+    width: 100%;
+}
+span.misionsubheading {
+    color: rgb(0, 193, 213);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.38%;
+    letter-spacing: 0.22px;
+}
+
+
+
+/* swagpartner */
+.Swag_partner{
+    margin: 160px 0px 80px;
+}
+.RightContent p{
+    color: rgba(17, 17, 17, 0.87);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+    margin-top: 25px;
+    max-width: 100%;
+}
+
+.featuresSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    gap: 80px;
+}
+
+.RightContent .featuresSec p{
+    padding: 0px;
+    margin: 8px 0px 0px;
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.38%;
+    letter-spacing: 0.14px;
+    max-width: 100%;
+    text-align: center;
+}
+.RightContent .featuresSec .featuresDiv h3{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 133.38%;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    text-align: center;  
+}
+
+.LeftContent{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.LeftContent>div:nth-child(2)
+{
+    position: relative;
+    right: -100px;
+}
+.Awareness{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 64px 0px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 32px 28px;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    position: relative;
+    width: 100%;
+    max-width: 413px;
+}
+.Awareness span{
+    color: rgba(0, 0, 0, 0.03);
+    font-family: Poppins !important;
+    font-size: 63.0194px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166.667%;
+    letter-spacing: 0.63px;
+    align-self: start;
+    margin-top: 0px;
+    margin-left: 0px;
+    white-space: nowrap;
+    position: absolute;
+    top: -52px;
+    left: 25px;
+}
+.Awareness h4{
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 133.38%;
+    letter-spacing: 0.2px;
+    padding-top: 15px;
+}
+
+
+.Awareness p{
+    color: rgba(17, 17, 17, 0.85);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+    margin-top: 10px;
+}
+
+
+
+/* .AwardsNominations */
+.AwardsNominations{
+    background-image: url(../../assets/awards_svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-height: 500px;
+    padding: 70px 0px;
+}
+.AwardsNominations h2{
+    color: #fff;
+}
+.AwardsNominations p{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.3px;
+    align-self: stretch;
+    margin-top: 25px;
+    margin-left: 0px;
+    width: 100%;
+}
+.AwardsImg img{
+    border-radius: 30px;
+    object-fit: cover !important;
+    /* position: relative; */
+}
+.AwardsNominations .AwardsNominations_content button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 0px !important;
+}
+.AwardsNominations .AwardsNominations_content button:hover{
+    background-color: #a2d061;
+    border: 1px solid #a2d061;
+    color: #fff;
+}
+
+
+
+
+
+/* responisve */
+@media (max-width:991px){
+    .OurMissionImg{
+        border-radius: 20px;
+        justify-content: center;
+        padding-right: 0px;
+    }
+    .LeftContent>div:nth-child(2)
+{
+    right: 0px;
+}
+    .LeftContent{
+    align-items: center;
+    }
+    .Awareness{
+        max-width: 100%;
+    }
+    .swag_partner .Text_row {
+        flex-direction: column-reverse;
+    }
+    .Swag_partner{
+        margin: 120px 0px 60px;
+    }
+    .OurMissionContent p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    span.misionsubheading {
+        font-size: 18px;
+    }
+    .OurMissionContent{
+        border-radius: 15px;
+        padding: 40px 20px;
+        max-width: 80%;
+    }
+    .AwardsNominations{
+        padding: 50px 0px;
+    }
+    .AwardsNominations .AwardsNominations_content button{
+margin-bottom: 0px;
+    }
+}
+@media (max-width:767px){
+    
+.featuresSec{
+    gap: 10px;
+}
+.AwardsNominations_wrap .AwardsImg, .AwardsImg {
+    min-height: 280px;
+}
+.RightContent .featuresSec p{
+    font-size: 12px;
+}
+.RightContent .featuresSec .featuresDiv h3{
+    font-size: 24px;
+}
+.AwardsNominations p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 15px;
+}
+}
